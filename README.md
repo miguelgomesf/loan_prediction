@@ -55,6 +55,10 @@ pip install -r requirements.txt
 
 - O uso de SMOTE melhorou muito os modelos (havia feito sem o uso deles antes)
 - O modelo de Decision Tree foi o mais ineficaz entre eles, talvez por não ser possível ajustar o treshold já que os valores eram muito binários
-- O modelo de Random Forest se mostrou o mais equilibrado entre eles, abaixo está a matriz de confusão gerada com o modelo
-- 
+- O modelo de Random Forest se mostrou o mais equilibrado entre eles
+- O modelo de XGBoost, a depender do treshold utilizado, pode ser mais equilibrado ou com um enfoque maior na classe 1, com um treshold de 0.2, ele prevê corretamente todos os exemplos da classe 1, mas em compensação, tem um índice maior de falsos positivos, ou seja, aprova mais empréstimos que deveriam ser negados. Já com um treshold de 0.6, ele traz mais equilíbrio, porém, o modelo de Random Forest ainda se mostra superior
+
+**Matrizes de confusão**
+- Decision Tree
+
 
