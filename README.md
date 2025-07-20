@@ -61,10 +61,13 @@ pip install -r requirements.txt
 **Matrizes de confusão**
 - Decision Tree
 ![Decision Tree](images/cm_dt.png)
+
 - Random Forest (treshold 0.6)
 ![Random Forest (treshold 0.6)](images/cm_rf.png)
+
 - XGBoost (treshold 0.2)
 ![XGBoost (treshold 0.2)](images/cm_xgb1.png)
+
 - XGBoost (treshold 0.6)
 ![XGBoost (treshold 0.6)](images/cm_xgb2.png)
 
