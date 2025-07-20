@@ -59,16 +59,16 @@ pip install -r requirements.txt
 - O modelo de XGBoost, a depender do treshold utilizado, pode ser mais equilibrado ou com um enfoque maior na classe 1, com um treshold de 0.2, ele prevê corretamente todos os exemplos da classe 1, mas em compensação, tem um índice maior de falsos positivos, ou seja, aprova mais empréstimos que deveriam ser negados. Já com um treshold de 0.6, ele traz mais equilíbrio, porém, o modelo de Random Forest ainda se mostra superior
 
 **Matrizes de confusão**
-###Decision Tree
+### Decision Tree
 ![Decision Tree](images/cm_dt.png)
 
-###Random Forest (treshold 0.6)
+### Random Forest (treshold 0.6)
 ![Random Forest (treshold 0.6)](images/cm_rf.png)
 
-###XGBoost (treshold 0.2)
+### XGBoost (treshold 0.2)
 ![XGBoost (treshold 0.2)](images/cm_xgb1.png)
 
-###XGBoost (treshold 0.6)
+### XGBoost (treshold 0.6)
 ![XGBoost (treshold 0.6)](images/cm_xgb2.png)
 
 ## Aprendizados
