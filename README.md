@@ -42,3 +42,19 @@ pip install -r requirements.txt
 - Matplotlib, Seaborn
 
 ## Raciocínio por trás do projeto
+
+1. **Entendimento do problema:** O objetivo era prever aprovações de empréstimo com base em informações financeiras e demográficas
+2. **Análise Inicial:** Algumas colunas tinham valores faltantes e/ou eram variáveis categóricas, informações importantes para o tratamento dos dados
+3. **Desbalanceamento:** Observei que no dataset, a classe 1 (Empréstimo aprovado) era muito mais frequente, o que poderia fazer os modelos serem desbalanceados também
+4. **Pré-processamento:** Por serem poucos os valores nulos, tratei a maioria deles com a moda (que também costumavam ser muito mais presentes que os outros valores), exceto por Credit_History, que tratei colocando o valor -1.0 (Missing), também inclui novas colunas que poderiam ser interessantes como TotalIncome (ApplicantIncome + CoapplicantIncome) e IncomePerFamily (TotalIncome/Dependents + 1). Além disso, transformei a variável Dependents em numérica e apliquei One-hot encoding nas variáveis categóricas
+5. **Balanceamento:** Antes de treinar e testar os modelos, tentei balancear melhor as classes utilizando SMOTE
+6. **Modelos:** Escolhi Decision Tree, Random Forest e XGBoost e os comparei, com Random Forest e XGBoost consegui também ajustar o treshold.
+7. **Avaliação:** Para avaliá-los, fiz uma matriz de confusão e um relatório de classificação que avaliava precisão, recall e f1-score, além da acurácia.
+
+## Resultados
+
+- O uso de SMOTE melhorou muito os modelos (havia feito sem o uso deles antes)
+- O modelo de Decision Tree foi o mais ineficaz entre eles, talvez por não ser possível ajustar o treshold já que os valores eram muito binários
+- O modelo de Random Forest se mostrou o mais equilibrado entre eles, abaixo está a matriz de confusão gerada com o modelo
+- 
+
