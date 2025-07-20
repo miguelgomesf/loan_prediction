@@ -1,4 +1,4 @@
-# loan_prediction
+# Loan prediction
 Esse projeto visa treinar modelos de machine learning para prever corretamente quando um empréstimo deve ser aprovado ou não com base em dados do Kaggle, utilizando Python e bibliotecas como Pandas e Scikit-Learn.
 
 ## Objetivo
